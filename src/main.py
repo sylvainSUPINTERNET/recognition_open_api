@@ -1,6 +1,6 @@
 from flask import Flask, jsonify
 
-from src.recognition.recognition import process
+from recognition.recognition import process
 
 app = Flask(__name__)
 

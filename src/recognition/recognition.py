@@ -1,9 +1,9 @@
 import cv2 as cv
 
 
-from src.services.allowed_recognition_types import check_type
-from src.services.download_model import dl_model, prepare_classifier
-from src.services.picture import process_picture, draw_ROI
+from services.allowed_recognition_types import check_type
+from services.download_model import dl_model, prepare_classifier
+from services.picture import process_picture, draw_ROI
 
 
 def process( type ):
