@@ -17,6 +17,5 @@ def draw_ROI (gray_pic, target_cascade, pic) :
         faceROI = gray_pic[y:y+h,x:x+w]
 
     cv.imwrite(f'{os.path.basename("../data")}/test_with_draw.jpeg', pic)
-    cv.imshow('Capture - Face detection', pic)
 
     return "ROI wip"
