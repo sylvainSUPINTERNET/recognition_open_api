@@ -21,8 +21,8 @@ def analysis(recognition_type):
         target_cascade = prepare_classifier(xml_model_file)
 
         # Process picture
-        gray_pic = process_picture() # TODO => add parameter to accept body request picture
-        draw_ROI(gray_pic, target_cascade)
+        gray_pic, img = process_picture() # TODO => add parameter to accept body request picture
+        draw_ROI(gray_pic, target_cascade, img)
 
 
         # TODO : WIP
