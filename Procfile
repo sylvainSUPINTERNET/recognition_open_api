@@ -1,1 +1,1 @@
-web: gunicorn wsgi:face-reco-api
+web: gunicorn wsgi
