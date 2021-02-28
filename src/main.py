@@ -5,6 +5,12 @@ from recognition.recognition import process
 app = Flask(__name__)
 
 
+@app.route('/')
+def home():
+    return jsonify({"message" : "Welcome !"}), 200
+
+
+
 @app.route('/api/v1/recognition/<type>')
 def recognition( type ):
     process(type)
