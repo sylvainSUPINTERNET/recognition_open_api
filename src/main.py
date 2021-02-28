@@ -1,13 +1,13 @@
 from flask import Flask, jsonify
 
-from recognition.recognition import process
+from src.recognition.recognition import process
 
 app = Flask(__name__)
 
 
 @app.route('/')
 def home():
-    return jsonify({"message" : "Welcome !"}), 200
+    return jsonify({"message" : "Welcome"}), 200
 
 
 
